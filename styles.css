@@ -1,0 +1,128 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+#main-header {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+label {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: .5rem 0;
+}
+
+input {
+    margin-right: .75rem;
+}
+
+#wrapper{
+    border: 1px solid grey;
+    margin: 6rem auto;
+    max-width: 580px;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 12rem;
+    height: auto;
+}
+
+#backtoStart{
+    display: none;
+    margin: 2rem auto;
+    border: none;
+    background-color: transparent;
+    font-size: .75rem;
+    font-weight: bold;
+    transition: all .5s ease;
+    align-items: center;
+    flex-direction: column;
+}
+
+#backtoStart svg {
+   font-size: 1.5rem;
+   align-items: center;
+   margin: .5rem;
+}
+
+#backtoStart:hover{
+    cursor: pointer;
+    color: blue;
+    /* text-decoration: underline; */
+    font-size: .85rem;
+}
+
+#icon-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.slideRight {
+    position: relative;
+    animation: slideRight 1.5s ease;
+}
+
+.fadeIn{
+    animation: fadeIn 2s ease-in-out;
+}
+
+#results {
+    display: flex;
+    border: 1px solid grey;
+    margin: 10rem auto;
+    max-width: 580px;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 15rem;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#nextBtn {
+    padding: .75rem 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    background-color: #2060E8;
+    color: white;
+    border: none;
+    transition: all .5s;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#nextBtn:hover {
+    cursor: pointer;
+    background-color: #4478E9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 120%;
+    }
+}
