@@ -90,7 +90,7 @@ document.getElementById("nextBtn").addEventListener("click", function () {
     if (currentNode.left.value === level5Yes.value) {
         setTimeout(() => {
             iconWrapper.innerHTML = checkMark
-        }, 2000);
+        }, 1000);
     }
 
     if (answer) {
