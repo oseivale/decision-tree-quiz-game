@@ -22,7 +22,7 @@ input {
 
 #wrapper{
     border: 1px solid grey;
-    margin: 6rem auto;
+    margin: 3rem auto;
     max-width: 580px;
     padding: 2rem;
     border-radius: 10px;
@@ -32,7 +32,7 @@ input {
 
 #backtoStart{
     display: none;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border: none;
     background-color: transparent;
     font-size: .75rem;
@@ -45,7 +45,7 @@ input {
 #backtoStart svg {
    font-size: 1.5rem;
    align-items: center;
-   margin: .5rem;
+   margin: 2rem .5rem;
 }
 
 #backtoStart:hover{
@@ -124,5 +124,12 @@ svg {
     }
     to {
         left: 120%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #question {
+        font-size: 1rem;
+        margin-bottom: 4rem;
     }
 }
